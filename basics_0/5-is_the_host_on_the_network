@@ -1,5 +1,7 @@
 #!/usr/bin/env bash
-if [ -z "$1" ]
+# Check if no arguments were passed, if any ping the input 5 times
+
+if [ $# -eq 0 ]
   then
     echo "Usage: 5-is_the_host_on_the_network {IP_ADDRESS}"
 	exit 1
